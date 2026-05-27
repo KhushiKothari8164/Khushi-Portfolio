@@ -468,10 +468,10 @@ const CATEGORIES = [
   { filePrefix: 'lifestyle', panelId: 'lifestyle',         tag: 'Lifestyle',       count: 5  },
 ];
 
-// ─── GitHub raw base URL ──────────────────────────────────
-// Videos are uploaded directly to the repo root (no subfolders):
-//   https://raw.githubusercontent.com/KhushiKothari8164/Khushi-Portfoilio/main/beauty1.mp4
-const GITHUB_BASE = 'https://raw.githubusercontent.com/KhushiKothari8164/Khushi-Portfoilio/main';
+// ─── GitHub media base URL ────────────────────────────────
+// Uses media.githubusercontent.com (not raw) so videos stream correctly in browsers.
+// Files are in the repo root: beauty1.mp4, collabs1.mp4, etc.
+const GITHUB_BASE = 'https://media.githubusercontent.com/media/KhushiKothari8164/Khushi-Portfolio/main';
 
 // ─── Build video cards ────────────────────────────────────
 function buildCards() {
